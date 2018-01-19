@@ -29,8 +29,9 @@ def amicable_sum(limit):
             pass
         
     print(sum(amicable_list))
-    
-amicable_sum(10000)
+
+if __name__=='__main__':    
+    amicable_sum(10000)
     
             
             
