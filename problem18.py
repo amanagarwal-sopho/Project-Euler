@@ -8,6 +8,9 @@ with open('input18.txt') as file:
         num_list = line.split(' ')
         for j,item in enumerate(num_list) :
             arr[i][j] = int(item)
+            
+for i in range(count):
+    print(*arr[i],sep=' ',end='\n')
 
 
 for i in range(count-1,0,-1):
