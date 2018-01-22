@@ -42,11 +42,10 @@ def primes_possible(a,b):
     return n
 
 def main():
-    n = prime_list(1000)
     max_possible = 1
     max_product,a_max,b_max = 1,1,1
     for a in range(-999,0):
-        for b in n:
+        for b in prime_list(1000):
             if ((a+b)%2 == 0 and b!=2) and (a+b) >0:
                 temp = primes_possible(a,b)
                 if temp > max_possible:
